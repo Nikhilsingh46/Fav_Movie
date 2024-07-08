@@ -1,9 +1,15 @@
-const FavMovie = "Avtar";
+const FavMovie = "Avatar";
 
-let guess = prompt("Enter a movie name:");
+let guess = prompt("Guess My Favorite Movie:");
 
 while ((guess != FavMovie) && (guess != 'quit')){
-  console.log("Wrong Guess.");
-  console.log("Try Again..");
-  guess = prompt("Enter a movie name:");
+  guess = prompt("Wrong Guess. Try Again.....")
+}
+
+if(guess == FavMovie){
+  console.log("congrats !!!");
+  console.log("You are Right.");
+  console.log("Avatar is my Favorite Movie");
+}else{
+  console.log("Quit");
 }
